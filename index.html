@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bio TikTok Web</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 { color: #333; margin-bottom: 10px; }
+p { color: #666; max-width: 600px; margin: 0 auto 20px; }
+
+.separator {
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* ===== SLIDER ===== */
+
+.preset-container,
+.video-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.preset-container {
+    height: 60px;
+}
+
+.preset-button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-color: #a87c2d;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: transform 0.4s ease;
+}
+
+.preset-button:hover {
+    background-color: #e60047;
+}
+
+.video-container {
+    height: 533px; /* Rasio 9:16 */
+}
+
+.video-container video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* ===== NAV BUTTON ===== */
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.nav-button {
+    background-color: #f3cb51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #000000;
+}
+</style>
+</head>
+
+<body>
+
+<img src="pp.jpg" class="profile-pic">
+<h1>Elchiora's Preset</h1>
+<p>Selamat datang di Elchiora's Preset! Tinggal pilih aja yaa mau preset yang mana, usaha dikit dong kan udah aku kasih gratis :3</p>
+
+<div class="separator"></div>
+
+
+
+<!-- UNTUK NAMBAHIN LINK PRESET -->
+<div class="preset-container">
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/2GBNvkMG8S-1f54ac7b2dbdf3f8" class="preset-button">Preset #1 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/i1dGp6MuNi-5e11de181bb2d2a3" class="preset-button">Preset #2 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/QwH4wc8zYX-36b41eab3db1db7f" class="preset-button">Preset #3 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/CL7hZNxLFS-dfdd349dbe4d6d3e" class="preset-button">Preset #4 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/K1Q38d062j-69d2947361c2ba9e" class="preset-button">Preset #5 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/9gH6VCQz90-3547bcb8cdeab4ba" class="preset-button">Preset #6 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/V7u1b2CpYs-bfd3384ea5d91a03" class="preset-button">Preset #7 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/Mo967YjQuC-a9f993d3936cbe1f" class="preset-button">Preset #8 - KLIK DISINI</a>
+    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/RkBo12mStv-0098b1ed09303638" class="preset-button">Preset #9 - KLIK DISINI</a>  
+</div>
+
+
+
+
+<!-- INI TEMPAT UNTUK NAMBAH VIDEO -->
+<div class="video-container">
+    <video controls>
+        <source src="p1.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p2.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p3.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p4.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p5.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p6.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p7.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p8.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="p9.mp4" type="video/mp4">
+    </video>    
+</div>
+
+
+
+
+<div class="nav-buttons">
+    <button class="nav-button" id="prevBtn">&lt;</button>
+    <button class="nav-button" id="nextBtn">&gt;</button>
+</div>
+
+<script>
+let currentIndex = 0;
+
+const presets = document.querySelectorAll('.preset-button');
+const videos = document.querySelectorAll('.video-container video');
+const totalItems = presets.length;
+
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+function stopAllVideos() {
+    const videos = document.querySelectorAll('.video-container video');
+    
+    videos.forEach(video => {
+        video.pause();        // hentikan video
+        video.currentTime = 0; // kembali ke awal (opsional, hapus kalau tidak mau reset)
+    });
+}
+
+function updateSlide() {
+    presets.forEach((item, index) => {
+        item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+    });
+
+    videos.forEach((item, index) => {
+        item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+    });
+}
+
+nextBtn.addEventListener('click', () => {
+    stopAllVideos();
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateSlide();
+});
+
+prevBtn.addEventListener('click', () => {
+    stopAllVideos();
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    updateSlide();
+});
+
+updateSlide();
+</script>
+
+</body>
+</html>
