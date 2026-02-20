@@ -1,218 +1,527 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bio TikTok Web</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-h1 { color: #333; margin-bottom: 10px; }
-p { color: #666; max-width: 600px; margin: 0 auto 20px; }
-
-.separator {
-    height: 2px;
-    background-color: #ccc;
-    margin: 20px auto;
-    width: 80%;
-}
-
-/* ===== SLIDER ===== */
-
-.preset-container,
-.video-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 300px;
-    margin: 0 auto 20px;
-}
-
-.preset-container {
-    height: 60px;
-}
-
-.preset-button {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    background-color: #a87c2d;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    box-sizing: border-box;
-    transition: transform 0.4s ease;
-}
-
-.preset-button:hover {
-    background-color: #e60047;
-}
-
-.video-container {
-    height: 533px; /* Rasio 9:16 */
-}
-
-.video-container video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-/* ===== NAV BUTTON ===== */
-
-.nav-buttons {
-    display: flex;
-    justify-content: space-between;
-    max-width: 300px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-.nav-button {
-    background-color: #f3cb51;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.nav-button:hover {
-    background-color: #000000;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elchiora's preset</title>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
 </head>
+<style>
+  *{
+    box-sizing:border-box;
+  }
+  body {
+    background: #ffffff;
+}
+.container {
+  max-width: 720px;
+  max-height: 900px;
+  margin: 0 auto;
+}
+
+  
+  
+  @font-face {
+    font-family: 'Kirsty Bd';
+    src: url('Kirsty Bd.otf') format('truetype');
+}
+  
+  .profil {
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-left: 10%;
+    margin-top: 13%;
+}
+
+  .nama {
+    font-family: arial, sans-serif;
+    margin-left: 45%;
+    margin-top: -23%;
+  }
+  .subnama {
+    font-family: arial, sans-serif;
+    margin-left: 45%;
+    margin-top: -5%;
+  }
+  
+  .box-kolom {
+    width: auto;
+    height: 100px;
+    background: linear-gradient(to bottom, #ffc300, #ffee99);
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 18%;
+    
+  }
+  
+  .penjelasan {
+    text-align: center;
+    font-family: Kirsty Bd, arial, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -22%;
+    font-size: 80%;
+  }
+  
+  .balok-latar {
+    width: 345px;
+    height: 500px;
+    background: white;
+    border: 1px solid black;
+    margin-top: 20%;
+    border-radius: 1%;
+  }
+  
+  .pencari {
+    align-items: center;
+    background: orange;
+    border-radius: 4px;
+    padding: 2px 2px;
+    margin-left: 7%;
+    margin-right: 7%;
+    position: relative;
+    bottom: 480px;
+    box-shadow: -2px 2px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .pencari input {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    position: relative;
+    left: 7px;
+    background: none;
+    color: black;
+  }
+  
+  .pencari input::placeholder {
+    color: white;
+    opacity: 0.9;
+  }
+  .pencari i {
+    background: darkorange;
+    padding: 15px 15px;
+    border-radius: 4px;
+    position: relative;
+    left: -1px;
+    transform: scale(1.1);
+    box-shadow: -1px 1px;
+    color: black;
+}
+  
+  .video-wrapper{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  position: relative;
+  bottom: 550px;
+  justify-content:center;
+}
+
+.videoy{
+  width:150px;
+}
+
+.videoy video{
+  width:100%;
+  height:auto;      /* Biar tidak merenggang */
+  border-radius:5px;
+  margin-top: 70%;
+  position: relative;
+  left: 7%;
+  display: block;
+}
+
+.video-controls{
+  display:flex;
+  flex-direction:row;
+  gap: 5px;
+  transform: scale(0.8);
+}
+
+.video-controls h4{
+  background:orange;
+  color:white;
+  padding:8px;
+  border-radius:6px;
+  cursor:pointer;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  left: 5px;
+  bottom: 40px;
+}
+  
+  .daftar-preset {
+    position: relative;
+    bottom: 837px;
+    left: 56%;
+    border-bottom: solid black;
+    margin-right: 65%;
+    text-align: center;
+    transition: opacity 000.1s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  
+  .love-btn{
+  font-size:30px;
+  cursor:pointer;
+  text-align:center;
+  margin-top:20px;
+  margin-left: 110px;
+  margin-right: 107px;
+  background: orange;
+  color: red;
+  position: relative;
+  bottom: 800px;
+  left: 82px;
+  border-radius: 9px;
+}
+
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.popup-box{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  animation:fadeIn 0.3s ease;
+}
+
+.popup-box button{
+  margin-top:15px;
+  padding:8px 20px;
+  border:none;
+  background:orange;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:scale(0.9);}
+  to{opacity:1; transform:scale(1);}
+}
+
+.use-btn{
+  text-align:center;
+  margin-top:15px;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  bottom: 800px;
+  left: 83px;
+}
+
+.use-btn a{
+  display:inline-block;
+  background:orange;
+  color:white;
+  padding:10px 25px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.2s;
+  font-size: 11px;
+}
+
+.use-btn a:active{
+  transform:scale(0.95);
+}
+  
+  .info {
+    font-family: Kirsty Bd, arial;
+    text-align: left;
+    margin-left: 8%;
+    position: relative;
+    bottom: 750px;
+    right: 23px;
+    transform: scale(0.8);
+  }
+  
+  .kotak-info {
+    width: 300px;
+    height: 70px;
+    background: darkorange;
+    border-radius: 5px;
+    margin-left: 6%;
+    position: relative;
+    bottom: 670px;
+  }
+  
+  .rule {
+    font-family: Kirsty Bd, Arial;
+    margin-left: 10%;
+    text-align: left;
+    position: relative;
+    bottom: 773px;
+    right: 90px;
+    transform: scale(0.5);
+    white-space: nowrap;
+  }
+
+
+  
+</style>
 
 <body>
+  
+  <div class="container">
+  
+  <!-- FOTO PROFIL NYA -->
+  <img src="pp.jpg" class="profil">
+  
+  <!-- NAMA WEB NYA -->
+  <h3 class="nama">Elchiora's preset</h3>
+  <h5 class="subnama">@levato on TikTok</h5>
+  
+  
+  <!-- TEKS & KOTAK PENJELASANNYA -->
+  <div class="box-kolom"></div>
+  <p class="penjelasan">Selamat datang di Elchiora's Preset! Tinggal pilih aja yaa mau preset yang mana, usaha dikit dong kan udah aku kasih gratis :3</p>
+  
+  
+  <!-- LATAR BELAKANG BIRU -->
+  <div class="balok-latar"></div>
+  
+  
+  <!-- KOLOM PENCARINYA -->
+  <div class="pencari">
+    <i class="fas fa-magnifying-glass"></i>
+    <input type="text" placeholder="Cari preset di sini...">
+  </div>
+  
+  
+  <!-- VIDEO PRESETNYA -->
+ <div class="video-wrapper">
+  
+  <div class="videoy">
+    <video id="MyVid" playsinline></video>
+  </div>
 
-<img src="pp.jpg" class="profile-pic">
-<h1>Elchiora's Preset</h1>
-<p>Selamat datang di Elchiora's Preset! Tinggal pilih aja yaa mau preset yang mana, usaha dikit dong kan udah aku kasih gratis :3</p>
+  <div class="video-controls">
+    <h4 onclick="prevVideo()">◀</h4>
+    <h4 id="PlyBtn" onclick="togglePlay()">Play</h4>
+    <h4 onclick="nextVideo()">▶</h4>
+  </div>
 
-<div class="separator"></div>
-
-
-
-<!-- UNTUK NAMBAHIN LINK PRESET -->
-<div class="preset-container">
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/2GBNvkMG8S-1f54ac7b2dbdf3f8" class="preset-button">Preset #1 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/i1dGp6MuNi-5e11de181bb2d2a3" class="preset-button">Preset #2 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/QwH4wc8zYX-36b41eab3db1db7f" class="preset-button">Preset #3 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/CL7hZNxLFS-dfdd349dbe4d6d3e" class="preset-button">Preset #4 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/K1Q38d062j-69d2947361c2ba9e" class="preset-button">Preset #5 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/9gH6VCQz90-3547bcb8cdeab4ba" class="preset-button">Preset #6 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/V7u1b2CpYs-bfd3384ea5d91a03" class="preset-button">Preset #7 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/Mo967YjQuC-a9f993d3936cbe1f" class="preset-button">Preset #8 - KLIK DISINI</a>
-    <a href="https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/RkBo12mStv-0098b1ed09303638" class="preset-button">Preset #9 - KLIK DISINI</a>  
 </div>
 
-
-
-
-<!-- INI TEMPAT UNTUK NAMBAH VIDEO -->
-<div class="video-container">
-    <video controls>
-        <source src="p1.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p2.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p3.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p4.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p5.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p6.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p7.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p8.mp4" type="video/mp4">
-    </video>
-    <video controls>
-        <source src="p9.mp4" type="video/mp4">
-    </video>    
+<h3 class="daftar-preset">PRESET #1</h3>
+  
+  
+  <div class="love-btn" onclick="tapLove()">❤</div>
+  
+  <div class="popup" id="lovePopup">
+  <div class="popup-box">
+    <p>Jangan dispam, salting nanti adminnya (⁠≧⁠▽⁠≦⁠)</p>
+    <button onclick="closePopup()">Iya min</button>
+  </div>
 </div>
 
-
-
-
-<div class="nav-buttons">
-    <button class="nav-button" id="prevBtn">&lt;</button>
-    <button class="nav-button" id="nextBtn">&gt;</button>
+<div class="use-btn">
+  <a id="useLink" href="#" target="_blank">PAKAI PRESET</a>
 </div>
 
+  <div class="kotak-info"></div>
+  
+  <p class="info">Infomarsi:</p>
+  
+  <ol class="rule">
+    <li>Web ini cuma untuk uji coba, kebetulan mimin suka koding.</li>
+    <li>Web ini cuma bisa diakses oleh perangkat mobile.</li>
+    <li>Mimin nggak setiap hari ngepost, karena sekolah.</li>
+  </ol>
+  
+</div>
+  
 <script>
-let currentIndex = 0;
-
-const presets = document.querySelectorAll('.preset-button');
-const videos = document.querySelectorAll('.video-container video');
-const totalItems = presets.length;
-
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-function stopAllVideos() {
-    const videos = document.querySelectorAll('.video-container video');
+  
+  const titles = [
+"PRESET #1",
+"PRESET #2",
+"PRESET #3",
+"PRESET #4",
+"PRESET #5",
+"PRESET #6",
+"PRESET #7",
+"PRESET #8",
+"PRESET #9",
+"PRESET #10",
+"PRESET #11",
+"PRESET #12",
+"PRESET #13",
+"PRESET #14",
+"PRESET #15",
+"PRESET #16",
+"PRESET #17",
+"PRESET #18",
+"PRESET #19",
+"PRESET #20",
     
-    videos.forEach(video => {
-        video.pause();        // hentikan video
-        video.currentTime = 0; // kembali ke awal (opsional, hapus kalau tidak mau reset)
-    });
+];
+
+const titleEl = document.querySelector(".daftar-preset");
+
+function updateTitle(){
+    titleEl.classList.add("fade-out");
+
+    setTimeout(() => {
+        titleEl.innerText = titles[index];
+        titleEl.classList.remove("fade-out");
+    }, 300);
 }
 
-function updateSlide() {
-    presets.forEach((item, index) => {
-        item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
-    });
+  
+  
+const videos = [
+"p1.mp4",
+"p2.mp4",
+"p3.mp4",
+"p4.mp4",
+"p5.mp4",
+"p6.mp4",
+"p7.mp4",
+"p8.mp4",
+"p9.mp4",
+];
 
-    videos.forEach((item, index) => {
-        item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
-    });
+
+const presetLinks = [
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/2GBNvkMG8S-1f54ac7b2dbdf3f8", 
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/i1dGp6MuNi-5e11de181bb2d2a3",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/QwH4wc8zYX-36b41eab3db1db7f",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/CL7hZNxLFS-dfdd349dbe4d6d3e",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/K1Q38d062j-69d2947361c2ba9e",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/9gH6VCQz90-3547bcb8cdeab4ba",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/V7u1b2CpYs-bfd3384ea5d91a03",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/Mo967YjQuC-a9f993d3936cbe1f",
+  
+  "https://alightcreative.com/am/share/u/lXkn1GLif9TNUc3IaDD3RVMManG2/p/RkBo12mStv-0098b1ed09303638"
+  
+];
+
+const useLink = document.getElementById("useLink");
+
+
+
+let index = 0;
+const player = document.getElementById("MyVid");
+const playBtn = document.getElementById("PlyBtn");
+
+function loadVideo(){
+    player.src = videos[index];
+    useLink.href = presetLinks[index];
 }
 
-nextBtn.addEventListener('click', () => {
-    stopAllVideos();
-    currentIndex = (currentIndex + 1) % totalItems;
-    updateSlide();
+function togglePlay(){
+    if(player.paused){
+        player.play();
+        playBtn.innerText = "∥";
+    } else {
+        player.pause();
+        playBtn.innerText = "Play";
+    }
+}
+
+function nextVideo(){
+    index = (index + 1) % videos.length;
+    loadVideo();
+    updateTitle();
+    player.play();
+    playBtn.innerText = "∥";
+}
+
+function prevVideo(){
+    index = (index - 1 + videos.length) % videos.length;
+    loadVideo();
+    updateTitle();
+    player.play();
+    playBtn.innerText = "∥";
+}
+
+loadVideo();
+
+
+
+let loveCount = 0;
+
+function tapLove(){
+  loveCount++;
+
+  if(loveCount >= 3){
+    document.getElementById("lovePopup").style.display = "flex";
+  }
+}
+
+function closePopup(){
+  document.getElementById("lovePopup").style.display = "none";
+}
+
+
+// MESIN PENCARI LANGSUNG KE PRESET
+const searchInput = document.querySelector('.pencari input');
+
+searchInput.addEventListener("keypress", function(e){
+    if(e.key === "Enter"){
+        const query = searchInput.value.toLowerCase().replace(/\s/g,''); // hapus spasi
+        let foundIndex = -1;
+
+        for(let i = 0; i < titles.length; i++){
+            const n = (i+1).toString();
+            if(query === n || query === `#${n}` || query === `preset${n}`){
+                foundIndex = i;
+                break;
+            }
+        }
+
+        if(foundIndex !== -1){
+            index = foundIndex;
+            loadVideo();          // ganti video + update link
+            updateTitle();        // ganti nama preset dengan animasi fade
+            player.play();
+            playBtn.innerText = "∥";
+        }
+
+        searchInput.value = ""; // kosongin input
+    }
 });
 
-prevBtn.addEventListener('click', () => {
-    stopAllVideos();
-    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-    updateSlide();
-});
 
-updateSlide();
+
+
+
 </script>
 
+
 </body>
-</html>
